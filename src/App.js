@@ -6,8 +6,8 @@ import bell from "./alarm-bell.mp3";
 
 function App() {
 
-  const [breakLength, setBreakLength] = useState(1);
-  const [sessionLength, setSessionLength] = useState(1);
+  const [breakLength, setBreakLength] = useState(5);
+  const [sessionLength, setSessionLength] = useState(25);
   const [startStop, setStartStop] = useState(false);
   const [mode, setMode] = useState(true);  //true is for sessions, false is for breaks.
   const [timer, setTimer ] = useState(sessionLength * 60);
