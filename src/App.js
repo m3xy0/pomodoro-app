@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-
+import plus from "./plus.svg";
+import minus from "./minus.svg";
+import bell from "./alarm-bell.mp3";
 
 function App() {
 
@@ -110,16 +112,16 @@ function App() {
         <div id="adjustments">
           <div id="break-div">
             <p id="break-label">Break Length</p>
-            <button id="break-decrement" onClick={decrement}><img src="minus.svg" alt="plus-sign"/></button>
+            <button id="break-decrement" onClick={decrement}><img src={minus} alt="minus-sign"/></button>
             <span id="break-length">{breakLength}</span>
-            <button id="break-increment" onClick={increment}><img src="plus.svg" alt="plus-sign"/></button>
+            <button id="break-increment" onClick={increment}><img src={plus} alt="plus-sign"/></button>
           </div>
           <div id="session-div">
             <p id="session-label">Session Length</p>
-            <button id="session-decrement" onClick={decrement}><img src="minus.svg" alt="plus-sign"/></button>
+            <button id="session-decrement" onClick={decrement}><img src={minus} alt="minus-sign"/></button>
             <span id="break-length"></span>
             <span id="session-length">{sessionLength}</span>
-            <button type="button" id="session-increment" onClick={increment}><img src="plus.svg" alt="plus-sign"/></button>
+            <button type="button" id="session-increment" onClick={increment}><img src={plus} alt="plus-sign"/></button>
           </div>
         </div>
         <div id="timer-div">
@@ -130,7 +132,7 @@ function App() {
           <button id="start_stop" onClick={toggle}>{startStop ? "STOP" : "START"}</button>
           <button id="reset" onClick={reset}>RESET</button>
         </div>
-        <audio id="beep" preload="auto" src="alarm-bell.mp3"></audio>
+        <audio id="beep" preload="auto" src={bell}></audio>
         <footer>
           <p>Designed and coded by</p>
           <p id="coder">Muhammet Ekşi</p>
