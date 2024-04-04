@@ -125,7 +125,7 @@ function App() {
           </div>
         </div>
         <div id="timer-div">
-          <p id="timer-label">{mode ? "Session" : "Break" }</p>
+          <p id="timer-label">{mode ? "Session" : "Break"}</p>
           <div id="outerCircle" style={{backgroundImage: `conic-gradient(#2f2f2f ${degree}deg, #2f2f2f ${degree}deg, #fe6f27 0deg, #fe6f27 360deg)`}}>
           <p id="time-left">{formatTime(timer)}</p>
           </div>
