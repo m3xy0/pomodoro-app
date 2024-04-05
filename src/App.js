@@ -60,6 +60,7 @@ function App() {
     const theAudio = document.getElementById("beep");
     setBreakLength(5);
     setSessionLength(25);
+    setTimer(sessionLength * 60);
     setStartStop(false);
     setMode(true);
     theAudio.pause();

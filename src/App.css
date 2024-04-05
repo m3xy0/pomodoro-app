@@ -51,7 +51,7 @@ line-height: 100%;
 }
 
 #wrapper {
-  width: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -87,14 +87,12 @@ h1 {
 #start_stop, #reset {
   border-radius: 0;
   display: inline-block;
-  width: 25%;
+  width: 30%;
   padding: 2% 4%;
   color:#fe6f27;
   font-weight:900;
   font-size: 1rem;
-  width: auto;
   height: auto;
-
 }
 
 #timer-label {
@@ -129,7 +127,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #wrapper {
-    width: 100%;
+    width: 100vw;
   }
 
   #break-div, #session-div {
@@ -151,5 +149,8 @@ footer {
     flex-direction: column;
   }
 
+  #start_stop, #reset {
+    width: 30%;
+  }
 
 }
